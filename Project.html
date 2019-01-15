@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Bootstrap & CSS Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- googlefonts -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit:800|Open+Sans:800" rel="stylesheet">
+    <!-- Moment.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <!-- jquery script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bootstrap.js script-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   
+    
+    <title>Open Pass</title>
+</head>
+<body>
+
+  <!-- Beginning of nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">OpenPass</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Project.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                  </ul>
+
+        <!-- Beginning of sign in code-->
+                <div class= "row">   
+                  <div class="col-sm-6">
+                      <form class="form-inline col-sm" id="newUser">
+                          <input class="form-control mr-sm-2" type="text"value="" name="FNAME" class="required name"id="name" placeholder="Name:"/>
+                  </div>
+                  <div class="col-sm-6">
+                          <input class="form-control" type="email" value="" name="EMAIL" class="required email" id="email" placeholder="Email:"/>
+                  </div>
+                </div>
+                    <button id="sign-up" class="btn btnSignIn btn-outline-success my-2 my-sm-0" type="sign-up">Sign-up</button>
+                  </form>
+                </div>
+              </nav>
+       
+
+       <!-- Beginning of Jombotron html-->
+        <div class="jumbotron jumbotron-fluid" style= "width: 100%">
+                <div class="container container2">
+                  <h1 class="display-4" style="font-weight: 500;">OpenPass</h1>
+                  <p class="lead">EVENTS. ANY CITY. ANYTIME</p>
+                </div>
+         </div>
+
+      <!-- searchbar for events and performers-->
+         <div class="search">
+          <div class="row">
+              <div class="input-group mb-3 ">
+                  <input type="text" id="searchAnswer" class="form-control search-input" data-catagory="n" placeholder="Search Event, Performer or Location" aria-label="Performer" aria-describedby="button-addon2">
+                      <div class="input-group-append">
+                          <button class="btnSearch bttn btn-outline-secondary" type="button" id="button-addon1" data-catagory="n">Search</button>
+                      </div>
+              </div>
+          </div>
+      </div>
+  
+<!-- /////div section for trending catagories\\\\\-->
+    
+    <!-- dropdown buttons for various genres and catagories-->
+    <div class="container">
+      <div class="row">
+
+        <!-- adding new dropdowns -->
+      <div class="containerH ">   
+        <div class="dropdown">
+          <button class="dropbtn">Broadway Plays</button>
+          <div class="dropdown-content">
+            <a href="#" class="catagories" data-genre="Hamilton">Hamilton</a>
+            <a href="#" class="catagories" data-genre="Aladdin">Aladdin</a>
+            <a href="#" class="catagories" data-genre="The Lion King, New York"> The Lion King</a>
+            <a href="#" class="catagories" data-genre="WICKED, New York">Wicked</a>
+            <a href="#" class="catagories" data-genre="Phantom of the Opera, New York">The Phantom of the Opera</a>
+            <a href="#" class="catagories" data-genre="King Kong, New York">King Kong</a>
+            <a href="#" class="catagories" data-genre="Once On This Island">Once On This Island</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="containerH ">
+          <div class="dropdown">
+            <button class="dropbtn">Music Genre</button>
+            <div class="dropdown-content">
+              <a href="#" class="catagories" data-genre="pop">Pop</a>
+              <a href="#" class="catagories" data-genre="Hip-Hop">Hip-Hop</a>
+              <a href="#" class="catagories" data-genre="Rock">Rock-n-roll</a>
+              <a href="#" class="catagories" data-genre="Jazz Music">Jazz</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="containerH ">
+            <div class="dropdown">
+              <button class="dropbtn">Sports</button>
+              <div class="dropdown-content">
+                <a href="#" class="catagories" data-genre="NFL">Football (NFL)</a>
+                <a href="#" class="catagories" data-genre="Soccer">Soccer (MLS)</a>
+                <a href="#" class="catagories" data-genre="NBA">Basketball (NBA)</a>
+                <a href="#" class="catagories" data-genre="NHL">Hockey (NHL)</a>
+                <a href="#" class="catagories" data-genre="MBL">BaseBall (MBL)</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="containerH ">
+              <div class="dropdown">
+                <button class="dropbtn">Popular Artists</button>
+                <div class="dropdown-content">
+                  <a href="#" class="catagories" data-genre="J-cole">J-cole</a>
+                  <a href="#" class="catagories" data-genre="Ariana">Ariana Grande</a>
+                  <a href="#" class="catagories" data-genre="Drake">Drake</a>
+                  <a href="#" class="catagories" data-genre="Taylor Swift">Taylor Swift</a>
+                  <a href="#" class="catagories" data-genre="Bruno Mars">Bruno Mars</a>
+                  <a href="#" class="catagories" data-genre="Meek Mills">Meek Mills</a>
+                </div>
+              </div>
+            </div>
+
+
+      </div>
+    </div>  
+
+  <!-- section where catagories of trending topics populate-->
+    <div class="container container3">
+        <div class="catagoriesCSS" data-url="https://www.instagram.com/accounts/login/?hl=en"><img src="images/InstagramImage.png" alt="" style="width: 100%; height: 100%" ></div>
+        <div class="catagoriesCSS" data-url="https://www.facebook.com/"><img src="images/facebookImage.gif" alt="" style="width: 100%; height: 100%"></div>
+        <div class="catagoriesCSS" data-url="https://twitter.com/login?lang=en"><img src="images/twitterImage.png" alt="" style="width: 100%; height: 100%" ></div>
+        <div class="catagoriesCSS" data-url="https://www.tumblr.com/login"><img src="images/tumblr.png" alt="" style="width: 100%; height: 100%"></div>
+        <div class="catagoriesCSS" data-url="http://www.worldstarhiphop.com/videos/"><img src="images/WorldStarImage.jpg" alt="" style="width: 100%; height: 100%"></div>
+        <div class="catagoriesCSS" data-url="https://www.youtube.com/"><img src="images/YouTubeImage.png" alt="" style="width: 100%; height: 100%"></div>
+      </div>
+  
+<!-- ///// Trending catagories END \\\\\-->
+
+
+    <!-- Where events will populate to the page-->
+      <div class="eventPop">
+        <div class="row">
+            <div class="col-md-12">
+    
+                <div class="card mb-4">
+                <div class="card-header">Events</div>
+                <div class="card-body">
+                    <table class="table table-sm table-hover" id='event-table'>  <!-- id= employee-table-->
+                    <thead>
+                        <tr>
+                            <th scope="col">Event/Tour</th>
+                            <th scope="col">Venue</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">#</th>
+                        </tr>
+                    </thead>
+                    <!-- events will append to the page here-->
+                    <tbody>
+    
+                    </tbody>
+                    </table>
+                </div>
+                </div>
+            </div>
+            </div>
+        
+
+    </div>
+      
+
+      <!-- firebase script-->
+      <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+      <!--Google image search-->
+      <script src="https://apis.google.com/js/api.js"></script>
+      <!-- JavaScript script -->
+      <script src="assets/project.js"></script>
+    
+
+</body>
+</html>
